@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+</head>
+<body>
+
+<h2>Customer Form</h2>
+
+<form action="/submit-form" method="post">
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+
+    <label for="lastName">Last Name(*):</label><br>
+    <input type="text" id="lastName" name="lastName" required><br><br>
+
+    <label for="freePasses">Free Passes(*):</label><br>
+    <input type="number" id="freePasses" name="freePasses" required><br><br>
+
+    <label for="postalCode">Postal Code(*):</label><br>
+    <input type="text" id="postalCode" name="postalCode" required pattern="[0-9]{6}" title="Please enter a valid 6-digit postal code"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
